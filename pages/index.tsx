@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const CopyButton: React.FC = () => {
+const useTemp = () => {
   const [copied, setCopied] = useState(false);
   useEffect(() => {
     if (copied) {
@@ -12,16 +12,24 @@ const CopyButton: React.FC = () => {
       return () => clearTimeout(timer);
     }
   }, [copied]);
+  return [copied, () => setCopied(true)] as [boolean, () => void];
+};
+
+const CodeBlock: React.FC = () => {
+  const [copied, update] = useTemp();
   return (
-    <button
-      className="border-2 py-2 px-4 mt-2 rounded hover:bg-gray-200 transition"
-      onClick={() => {
-        window.navigator.clipboard.writeText("npx create-next-app --ts");
-        setCopied(true);
-      }}
-    >
-      {copied ? "Copied Successfully" : "Copy"}
-    </button>
+    <>
+      <code
+        className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded"
+        onClick={() => {
+          window.navigator.clipboard.writeText("npx create-next-app --ts");
+          update();
+        }}
+      >
+        npx create-next-app --ts
+      </code>
+      {copied && <div className="mt-2">Copied Successfully!</div>}
+    </>
   );
 };
 
@@ -36,10 +44,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center animate-fade-in">
         <div className="text-xl p-4">We Recommend</div>
-        <code className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded">
-          npx create-next-app --ts
-        </code>
-        <CopyButton />
+        <CodeBlock />
       </div>
     </div>
   );
