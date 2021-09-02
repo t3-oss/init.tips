@@ -47,7 +47,7 @@ export default function Home() {
           name="description"
           content="Our current recommendation for initializing a new project"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center">
