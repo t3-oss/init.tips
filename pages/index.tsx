@@ -42,7 +42,10 @@ const CodeBlock: React.FC = () => {
 
 const RecommendationPage = () => {
   return (
-    <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center relative cursor-default">
+    <div
+      id="rec"
+      className="flex flex-col items-center animate-fade-in-down h-screen justify-center relative cursor-default"
+    >
       <div className="text-xl p-4">We Recommend Using</div>
       <CodeBlock />
       <div className="absolute bottom-0 w-full flex justify-center p-4">
@@ -137,6 +140,9 @@ const AboutPage = () => {
             Github
           </a>
         </p>
+      </div>
+      <div className="absolute bottom-0 w-full flex justify-center p-4">
+        <a href="#rec">^</a>
       </div>
     </div>
   );
