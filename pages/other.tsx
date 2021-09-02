@@ -11,8 +11,8 @@ const OtherPage = () => {
         <h2 className="text-2xl font-bold mt-4 mb-2">Other Recommendations</h2>
         <p>
           We recognize that Next.js and Typescript don't solve every problem.
-          While we encourage you to use the primivites they provide as often as
-          you can, there are other tools that will help simplify other parts of
+          While we encourage you to use the primitives they provide as often as
+          you can, there are other tools that will help simplify and improve
           your developer experience.
         </p>
 
@@ -50,7 +50,7 @@ const OtherPage = () => {
         </h2>
         <p>
           Prisma is to SQL what Typescript is to JS. Never thought I'd love an
-          ORM, but man, trust us on this one.
+          ORM, but man, trust me on this one.
         </p>
 
         <h1 className="text-2xl mb-4 mt-8 font-semibold">Deployments and CI</h1>
@@ -80,7 +80,8 @@ const OtherPage = () => {
         <h1 className="text-2xl mb-2 mt-8 font-semibold">State Management</h1>
         <p>
           <span className="font-semibold italic">Editor's Note:</span> State
-          management libraries are great, but often aren't needed. Start with{" "}
+          management libraries can be great, but often aren't necessary. Start
+          with{" "}
           <a href="https://react-query.tanstack.com/" className="link-dark">
             React Query
           </a>{" "}
@@ -93,9 +94,27 @@ const OtherPage = () => {
           </a>
         </h2>
         <p>
-          The "modern, simple Redux" you didn't know you needed. I have built
-          everything from video call apps to games to servers with this little
-          library
+          The "modern, simple Redux" you didn't know you needed.{" "}
+          <a href="https://github.com/pmndrs" className="link-dark">
+            Poimandres
+          </a>{" "}
+          can always be trusted. I have built everything from video call apps to
+          games to servers with this little library
+        </p>
+
+        <h2 className="text-xl mt-4">
+          <a href="https://jotai.pmnd.rs/" className="link-dark">
+            Jotai
+          </a>
+        </h2>
+        <p>
+          For a more atomic approach, Jotai is hard to beat. Also by
+          <a href="https://github.com/pmndrs" className="link-dark">
+            Poimandres
+          </a>
+          , Jotai lets you define singletons that feel like global{" "}
+          <code>useState</code>. Great option for stateful behaviors that don't
+          need a state machine just yet
         </p>
       </div>
     </div>
@@ -104,7 +123,7 @@ const OtherPage = () => {
 
 const SITE_DESCRIPTION =
   "init.tips - our current recommendation for initializing a new web development project";
-const SITE_NAME = "Other Tips - init.tips";
+const SITE_NAME = "Other Recommendations - init.tips";
 
 const SiteHead: React.FC = () => {
   return (
