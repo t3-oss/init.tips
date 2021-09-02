@@ -15,6 +15,14 @@ export default function Home() {
         <code className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded">
           npx create-next-app --ts
         </code>
+        <button
+          className="border-2 py-2 px-4 mt-2 rounded hover:bg-gray-200 transition"
+          onClick={() =>
+            window.navigator.clipboard.writeText("npx create-next-app --ts")
+          }
+        >
+          Copy
+        </button>
       </div>
     </div>
   );
