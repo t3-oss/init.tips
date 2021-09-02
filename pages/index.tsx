@@ -54,14 +54,21 @@ const RecommendationPage = () => {
 
 const WhyPage = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
+    <div className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-300 text-gray-700">
       <div id="why" className="max-w-md md:max-w-2xl text-lg p-4">
         <h2 className="text-xl font-bold mt-4">
           Why <a href="https://www.typescriptlang.org/">Typescript</a>?
         </h2>
         <p>Javascript is hard. Why add more rules?</p>
         <p>
-          We firmly believe the experience Typescript provides will{" "}
+          We firmly believe the experience{" "}
+          <a
+            href="https://typescriptlang.org/"
+            className="text-blue-800 no-underline hover:underline hover:text-blue-600"
+          >
+            Typescript
+          </a>{" "}
+          provides will{" "}
           <span className="italic">help you be a better developer,</span>{" "}
           regardless of where you are in your career as an engineer. Whether
           you're new to web development or a seasoned pro, the "strictness" of
@@ -77,10 +84,15 @@ const WhyPage = () => {
           imagined before. It also can lead developers down some rough paths.
         </p>
         <p>
-          <a href="https://nextjs.org/">Next.js</a> offers a lightly
-          opinionated, heavily optimized approach to creating a website using
-          React. From routing to API definitions to image rendering, we trust
-          Next to lead developers towards good decisions.
+          <a
+            href="https://nextjs.org/"
+            className="text-blue-800 no-underline hover:underline hover:text-blue-600"
+          >
+            Next.js
+          </a>{" "}
+          offers a lightly opinionated, heavily optimized approach to creating a
+          website using React. From routing to API definitions to image
+          rendering, we trust Next.js to lead developers towards good decisions.
         </p>
       </div>
     </div>
