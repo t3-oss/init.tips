@@ -83,7 +83,7 @@ const WhyPage = () => {
         <p>Javascript is hard. Why add more rules?</p>
         <p>
           We firmly believe the experience{" "}
-          <a href="https://typescriptlang.org/" className="link-light">
+          <a href="https://www.typescriptlang.org/" className="link-light">
             Typescript
           </a>{" "}
           provides will{" "}
