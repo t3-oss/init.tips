@@ -25,3 +25,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.link-light {
+  @apply text-blue-800 no-underline hover:underline hover:text-blue-600;
+}
+
+.link-dark {
+  @apply text-blue-300 no-underline hover:underline hover:text-blue-500;
+}

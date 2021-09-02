@@ -83,10 +83,7 @@ const WhyPage = () => {
         <p>Javascript is hard. Why add more rules?</p>
         <p>
           We firmly believe the experience{" "}
-          <a
-            href="https://typescriptlang.org/"
-            className="text-blue-800 no-underline hover:underline hover:text-blue-600"
-          >
+          <a href="https://typescriptlang.org/" className="link-light">
             Typescript
           </a>{" "}
           provides will{" "}
@@ -105,10 +102,7 @@ const WhyPage = () => {
           imagined before. It also can lead developers down some rough paths.
         </p>
         <p>
-          <a
-            href="https://nextjs.org/"
-            className="text-blue-800 no-underline hover:underline hover:text-blue-600"
-          >
+          <a href="https://nextjs.org/" className="link-light">
             Next.js
           </a>{" "}
           offers a lightly opinionated, heavily optimized approach to creating a
@@ -135,35 +129,23 @@ const AboutPage = () => {
         <h2 className="text-xl font-bold mt-4">Credits</h2>
         <p>
           Built by{" "}
-          <a
-            href="https://t3.gg"
-            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
-          >
+          <a href="https://t3.gg" className="link-dark">
             Theo
           </a>{" "}
           and{" "}
-          <a
-            href="https://mark.florkow.ski"
-            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
-          >
+          <a href="https://mark.florkow.ski" className="link-dark">
             Mark
           </a>
         </p>
         <p>
           Hosted on{" "}
-          <a
-            href="https://vercel.com"
-            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
-          >
+          <a href="https://vercel.com" className="link-dark">
             Vercel
           </a>
         </p>
         <p>
           Source available on{" "}
-          <a
-            href="https://github.com/TheoBr/init.tips"
-            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
-          >
+          <a href="https://github.com/TheoBr/init.tips" className="link-dark">
             Github
           </a>
         </p>
