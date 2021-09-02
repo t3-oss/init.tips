@@ -54,8 +54,8 @@ const RecommendationPage = () => {
 
 const WhyPage = () => {
   return (
-    <div className="flex flex-col items-center h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
-      <div id="why" className="max-w-md md:max-w-2xl text-lg px-4">
+    <div className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
+      <div id="why" className="max-w-md md:max-w-2xl text-lg p-4">
         <h2 className="text-xl font-bold mt-4">
           Why <a href="https://www.typescriptlang.org/">Typescript</a>?
         </h2>
@@ -74,9 +74,8 @@ const WhyPage = () => {
         </h2>
         <p>
           We love React. It has made UI development accessible in ways we never
-          imagined before.
+          imagined before. It also can lead developers down some rough paths.
         </p>
-        <p>It also can lead developers down some pretty rough paths.</p>
         <p>
           Next.JS offers a lightly opinionated, heavily optimized approach to
           creating a website using React. From routing to API definitions to
