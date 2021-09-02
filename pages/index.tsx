@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
 
@@ -44,11 +45,12 @@ const CodeBlock: React.FC = () => {
 };
 
 const VisibilityWrapper: React.FC<{ hash: string }> = (props) => {
+  const router = useRouter();
   return (
     <VisibilitySensor
       onChange={(isVisible) => {
         if (isVisible && window.location.hash !== props.hash) {
-          window.history.replaceState({}, "init.tips", "/" + props.hash);
+          router.replace(props.hash);
         }
       }}
       partialVisibility
