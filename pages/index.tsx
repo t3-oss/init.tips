@@ -43,10 +43,17 @@ export default function Home() {
     <div>
       <Head>
         <title>Init</title>
+        <meta property="og:title" content="Init" />
         <meta
           name="description"
-          content="Our current recommendation for initializing a new project"
+          content="init.tips - our current recommendation for initializing a new web development project"
         />
+        <meta
+          property="og:description"
+          content="init.tips - our current recommendation for initializing a new web development project"
+        />
+        <meta property="og:url" content="https://init.tips/" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
