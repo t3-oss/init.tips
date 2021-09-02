@@ -133,9 +133,7 @@ const WhyPage = () => {
         </p>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center p-4">
-        <VisibilityWrapper hash="#why">
-          <a href="#about">About</a>
-        </VisibilityWrapper>
+        <a href="#about">About</a>
       </div>
     </div>
   );
@@ -173,9 +171,7 @@ const AboutPage = () => {
         </p>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center p-4">
-        <VisibilityWrapper hash="#about">
-          <a href="#">^</a>
-        </VisibilityWrapper>
+        <a href="#">^</a>
       </div>
     </div>
   );
