@@ -55,24 +55,33 @@ const RecommendationPage = () => {
 const WhyPage = () => {
   return (
     <div className="flex flex-col items-center h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
-      <div className="max-w-md md:max-w-2xl">
-        <h2 id="why" className="text-lg font-bold">
-          Why Next.js and Typescript?
+      <div id="why" className="max-w-md md:max-w-2xl text-lg">
+        <h2 className="text-xl font-bold mt-4">
+          Why <a href="https://www.typescriptlang.org/">Typescript</a>?
+        </h2>
+        <p>Javascript is hard. Why add more rules?</p>
+        <p>
+          We firmly believe the experience Typescript provides will{" "}
+          <span className="italic">help you be a better developer,</span>{" "}
+          regardless of where you are in your career as an engineer. Whether
+          you're new to web development or a seasoned pro, the "strictness" of
+          Typescript will provide a less frustrating, more consistent experience
+          than vanilla JS
+        </p>
+        <div className="p-4" />
+        <h2 className="text-xl font-bold">
+          Why <a href="https://nextjs.org/">Next.js</a>?
         </h2>
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur
+          We love React. It has made UI development accessible in ways we never
+          imagined before.
+        </p>
+        <p>It also can lead developers down some pretty rough paths.</p>
+        <p>
+          Next.JS offers a lightly opinionated, heavily optimized approach to
+          creating a website using React. From routing to API definitions to
+          image rendering, we trust Next to lead developers towards good
+          decisions.
         </p>
       </div>
     </div>
