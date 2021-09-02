@@ -55,7 +55,7 @@ const RecommendationPage = () => {
 const WhyPage = () => {
   return (
     <div className="flex flex-col items-center h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
-      <div id="why" className="max-w-md md:max-w-2xl text-lg">
+      <div id="why" className="max-w-md md:max-w-2xl text-lg px-4">
         <h2 className="text-xl font-bold mt-4">
           Why <a href="https://www.typescriptlang.org/">Typescript</a>?
         </h2>
