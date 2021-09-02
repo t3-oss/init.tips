@@ -45,7 +45,6 @@ const VisibilityWrapper: React.FC<{ hash: string }> = (props) => {
   return (
     <VisibilitySensor
       onChange={(isVisible) => {
-        console.log("visible?", isVisible, window.location.hash);
         if (isVisible && window.location.hash !== props.hash) {
           window.history.replaceState({}, "init.tips", "/" + props.hash);
         }
