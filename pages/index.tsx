@@ -50,9 +50,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center cursor-default">
+      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center relative cursor-default">
         <div className="text-xl p-4">We Recommend Using</div>
         <CodeBlock />
+        <div className="absolute bottom-0 w-full flex justify-center p-4">
+          <a href="#why">...why?</a>
+        </div>
+      </div>
+      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
+        <h2 id="why" className="text-lg">
+          Why Next.js and Typescript?
+        </h2>
       </div>
     </div>
   );
