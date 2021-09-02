@@ -54,8 +54,11 @@ const RecommendationPage = () => {
 
 const WhyPage = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-300 text-gray-700">
-      <div id="why" className="max-w-md md:max-w-2xl text-lg p-4">
+    <div
+      id="why"
+      className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-300 text-gray-700"
+    >
+      <div className="max-w-md md:max-w-2xl text-lg p-4">
         <h2 className="text-xl font-bold mt-4">
           Why <a href="https://www.typescriptlang.org/">Typescript</a>?
         </h2>
@@ -95,6 +98,46 @@ const WhyPage = () => {
           rendering, we trust Next.js to lead developers towards good decisions.
         </p>
       </div>
+      <div className="absolute bottom-0 w-full flex justify-center p-4">
+        <a href="#about">About</a>
+      </div>
+    </div>
+  );
+};
+
+const AboutPage = () => {
+  return (
+    <div
+      id="about"
+      className="flex flex-col items-center min-h-screen justify-center cursor-default relative"
+    >
+      <div className="max-w-md md:max-w-2xl text-lg p-4">
+        <p>
+          Made by{" "}
+          <a
+            href="https://t3.gg"
+            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
+          >
+            Theo
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://mark.florkow.ski"
+            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
+          >
+            Mark
+          </a>
+        </p>
+        <p>
+          Wanna see the source? Check it out on{" "}
+          <a
+            href="https://github.com/TheoBr/init.tips"
+            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
+          >
+            Github
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
@@ -123,6 +166,7 @@ export default function Home() {
       <SiteHead />
       <RecommendationPage />
       <WhyPage />
+      <AboutPage />
     </div>
   );
 }
