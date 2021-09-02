@@ -108,7 +108,7 @@ const OtherPage = () => {
           </a>
         </h2>
         <p>
-          For a more atomic approach, Jotai is hard to beat. Also by
+          For a more atomic approach, Jotai is hard to beat. Also by{" "}
           <a href="https://github.com/pmndrs" className="link-dark">
             Poimandres
           </a>
