@@ -20,7 +20,7 @@ const CodeBlock: React.FC = () => {
   return (
     <>
       <code
-        className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded"
+        className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded cursor-pointer"
         onClick={() => {
           window.navigator.clipboard.writeText("npx create-next-app --ts");
           update();
@@ -28,7 +28,11 @@ const CodeBlock: React.FC = () => {
       >
         npx create-next-app --ts
       </code>
-      <div className={`mt-2 ${!copied && "opacity-0"}`}>
+      <div
+        className={`mt-2 opacity-1 ${
+          !copied && "opacity-0 delay-1000 transition-opacity"
+        }`}
+      >
         Copied Successfully!
       </div>
     </>
@@ -44,7 +48,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col items-center animate-fade-in h-screen justify-center">
+      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center">
         <div className="text-xl p-4">We Recommend</div>
         <CodeBlock />
       </div>
