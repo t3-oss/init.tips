@@ -10,9 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center animate-fade-in">
         <div className="text-xl p-4">We Recommend</div>
-        <code className="bg-gray-700 hover:bg-gray-500 text-gray-200 px-4 py-2 rounded">
+        <code className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded">
           npx create-next-app --ts
         </code>
       </div>
