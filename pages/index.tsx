@@ -51,7 +51,7 @@ export default function Home() {
       </Head>
 
       <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center cursor-default">
-        <div className="text-xl p-4">We Recommend</div>
+        <div className="text-xl p-4">We Recommend Using</div>
         <CodeBlock />
       </div>
     </div>
