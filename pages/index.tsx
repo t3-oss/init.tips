@@ -141,8 +141,8 @@ const AboutPage = () => {
             Vercel
           </a>
         </p>
-        <h2 className="text-xl font-bold mt-4">Source</h2>
         <p>
+          Source available on{" "}
           <a
             href="https://github.com/TheoBr/init.tips"
             className="text-blue-300 no-underline hover:underline hover:text-blue-500"
