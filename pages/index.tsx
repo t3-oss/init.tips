@@ -2,6 +2,7 @@ import PlausibleProvider from "next-plausible";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import VisibilitySensor from "react-visibility-sensor";
+import Link from "next/link";
 
 const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
 
@@ -94,7 +95,9 @@ const WhyPage = () => {
           Typescript will provide a less frustrating, more consistent experience
           than vanilla JS
         </p>
+
         <div className="p-4" />
+
         <h2 className="text-xl font-bold">
           Why <a href="https://nextjs.org/">Next.js</a>?
         </h2>
@@ -109,6 +112,22 @@ const WhyPage = () => {
           offers a lightly opinionated, heavily optimized approach to creating a
           website using React. From routing to API definitions to image
           rendering, we trust Next.js to lead developers towards good decisions.
+        </p>
+
+        <div className="p-4" />
+
+        <h2 className="text-xl font-bold">Why nothing else?</h2>
+        <p>
+          We believe in keeping things as simple as possible. These
+          recommendations can get you pretty far, but we recognize there are
+          problems these tools don't sovle well by themselves.
+        </p>
+        <p>
+          <Link href="/other">
+            <a className="link-light">
+              Here are some recommendations for when things get more complex
+            </a>
+          </Link>
         </p>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center p-4">
