@@ -62,25 +62,28 @@ const WhyPage = () => {
   );
 };
 
+const SITE_DESCRIPTION =
+  "init.tips - our current recommendation for initializing a new web development project";
+const SITE_NAME = "init.tips";
+
+const SiteHead: React.FC = () => {
+  return (
+    <Head>
+      <title>{SITE_NAME}</title>
+      <meta property="og:title" content={SITE_NAME} />
+      <meta name="description" content={SITE_DESCRIPTION} />
+      <meta property="og:description" content={SITE_DESCRIPTION} />
+      <meta property="og:url" content="https://init.tips/" />
+      <meta property="og:type" content="website" />
+      <link rel="icon" href="/favicon.svg" />
+    </Head>
+  );
+};
+
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Init</title>
-        <meta property="og:title" content="Init" />
-        <meta
-          name="description"
-          content="init.tips - our current recommendation for initializing a new web development project"
-        />
-        <meta
-          property="og:description"
-          content="init.tips - our current recommendation for initializing a new web development project"
-        />
-        <meta property="og:url" content="https://init.tips/" />
-        <meta property="og:type" content="website" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
-
+      <SiteHead />
       <RecommendationPage />
       <WhyPage />
     </div>
