@@ -6,9 +6,10 @@ const CopyButton: React.FC = () => {
   const [copied, setCopied] = useState(false);
   useEffect(() => {
     if (copied) {
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         setCopied(false);
       }, 2000);
+      return () => clearTimeout(timer);
     }
   }, [copied]);
   return (
