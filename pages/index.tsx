@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
+const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
+
 const useTemp = () => {
   const [copied, setCopied] = useState(false);
   useEffect(() => {
@@ -21,11 +23,11 @@ const CodeBlock: React.FC = () => {
       <code
         className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded cursor-pointer"
         onClick={() => {
-          window.navigator.clipboard.writeText("npx create-next-app --ts");
+          window.navigator.clipboard.writeText(CURRENT_RECOMMENDED_COMMAND);
           update();
         }}
       >
-        npx create-next-app --ts
+        {CURRENT_RECOMMENDED_COMMAND}
       </code>
       <div
         className={`mt-2 opacity-1 ${
@@ -35,6 +37,28 @@ const CodeBlock: React.FC = () => {
         Copied Successfully!
       </div>
     </>
+  );
+};
+
+const RecommendationPage = () => {
+  return (
+    <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center relative cursor-default">
+      <div className="text-xl p-4">We Recommend Using</div>
+      <CodeBlock />
+      <div className="absolute bottom-0 w-full flex justify-center p-4">
+        <a href="#why">...why?</a>
+      </div>
+    </div>
+  );
+};
+
+const WhyPage = () => {
+  return (
+    <div className="flex flex-col items-center h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
+      <h2 id="why" className="text-lg">
+        Why Next.js and Typescript?
+      </h2>
+    </div>
   );
 };
 
@@ -57,18 +81,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center relative cursor-default">
-        <div className="text-xl p-4">We Recommend Using</div>
-        <CodeBlock />
-        <div className="absolute bottom-0 w-full flex justify-center p-4">
-          <a href="#why">...why?</a>
-        </div>
-      </div>
-      <div className="flex flex-col items-center h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
-        <h2 id="why" className="text-lg">
-          Why Next.js and Typescript?
-        </h2>
-      </div>
+      <RecommendationPage />
+      <WhyPage />
     </div>
   );
 }
