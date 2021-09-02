@@ -115,8 +115,9 @@ const AboutPage = () => {
       className="flex flex-col items-center min-h-screen justify-center cursor-default relative"
     >
       <div className="max-w-md md:max-w-2xl text-lg p-4">
+        <h2 className="text-xl font-bold mt-4">Credits</h2>
         <p>
-          Made by{" "}
+          Built by{" "}
           <a
             href="https://t3.gg"
             className="text-blue-300 no-underline hover:underline hover:text-blue-500"
@@ -132,7 +133,16 @@ const AboutPage = () => {
           </a>
         </p>
         <p>
-          Wanna see the source? Check it out on{" "}
+          Hosted on{" "}
+          <a
+            href="https://vercel.com"
+            className="text-blue-300 no-underline hover:underline hover:text-blue-500"
+          >
+            Vercel
+          </a>
+        </p>
+        <h2 className="text-xl font-bold mt-4">Source</h2>
+        <p>
           <a
             href="https://github.com/TheoBr/init.tips"
             className="text-blue-300 no-underline hover:underline hover:text-blue-500"
