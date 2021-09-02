@@ -12,7 +12,9 @@ export default function Home() {
 
       <div className="flex flex-col items-center">
         <div className="text-xl p-4">We Recommend</div>
-        <code>npx create-next-app --ts</code>
+        <code className="bg-gray-700 hover:bg-gray-500 text-gray-200 px-4 py-2 rounded">
+          npx create-next-app --ts
+        </code>
       </div>
     </div>
   );
