@@ -50,7 +50,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center">
+      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center cursor-default">
         <div className="text-xl p-4">We Recommend</div>
         <CodeBlock />
       </div>
