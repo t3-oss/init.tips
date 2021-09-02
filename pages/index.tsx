@@ -30,7 +30,7 @@ const CodeBlock: React.FC = () => {
       </code>
       <div
         className={`mt-2 opacity-1 ${
-          !copied && "opacity-0 delay-1000 transition-opacity"
+          !copied && "opacity-0 duration-500 transition-opacity"
         }`}
       >
         Copied Successfully!
