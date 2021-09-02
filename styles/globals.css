@@ -11,6 +11,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body {
+  @apply bg-gray-800 text-gray-200;
+}
+
 a {
   color: inherit;
   text-decoration: none;

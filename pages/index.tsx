@@ -28,7 +28,9 @@ const CodeBlock: React.FC = () => {
       >
         npx create-next-app --ts
       </code>
-      {copied && <div className="mt-2">Copied Successfully!</div>}
+      <div className={`mt-2 ${!copied && "opacity-0"}`}>
+        Copied Successfully!
+      </div>
     </>
   );
 };
@@ -42,7 +44,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col items-center animate-fade-in">
+      <div className="flex flex-col items-center animate-fade-in h-screen justify-center">
         <div className="text-xl p-4">We Recommend</div>
         <CodeBlock />
       </div>
