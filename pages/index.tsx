@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import VisibilitySensor from "react-visibility-sensor";
 
 const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
 
@@ -40,13 +41,31 @@ const CodeBlock: React.FC = () => {
   );
 };
 
+const VisibilityWrapper: React.FC<{ hash: string }> = (props) => {
+  return (
+    <VisibilitySensor
+      onChange={(isVisible) => {
+        console.log("visible?", isVisible, window.location.hash);
+        if (isVisible && window.location.hash !== props.hash) {
+          window.history.replaceState({}, "init.tips", "/" + props.hash);
+        }
+      }}
+      partialVisibility
+    >
+      {props.children}
+    </VisibilitySensor>
+  );
+};
+
 const RecommendationPage = () => {
   return (
     <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center relative cursor-default">
       <div className="text-xl p-4">We Recommend Using</div>
       <CodeBlock />
       <div className="absolute bottom-0 w-full flex justify-center p-4">
-        <a href="#why">...why?</a>
+        <VisibilityWrapper hash="">
+          <a href="#why">...why?</a>
+        </VisibilityWrapper>
       </div>
     </div>
   );
@@ -99,7 +118,9 @@ const WhyPage = () => {
         </p>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center p-4">
-        <a href="#about">About</a>
+        <VisibilityWrapper hash="#why">
+          <a href="#about">About</a>
+        </VisibilityWrapper>
       </div>
     </div>
   );
@@ -149,7 +170,9 @@ const AboutPage = () => {
         </p>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center p-4">
-        <a href="#">^</a>
+        <VisibilityWrapper hash="#about">
+          <a href="#">^</a>
+        </VisibilityWrapper>
       </div>
     </div>
   );
