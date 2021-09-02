@@ -77,10 +77,10 @@ const WhyPage = () => {
           imagined before. It also can lead developers down some rough paths.
         </p>
         <p>
-          Next.JS offers a lightly opinionated, heavily optimized approach to
-          creating a website using React. From routing to API definitions to
-          image rendering, we trust Next to lead developers towards good
-          decisions.
+          <a href="https://nextjs.org/">Next.js</a> offers a lightly
+          opinionated, heavily optimized approach to creating a website using
+          React. From routing to API definitions to image rendering, we trust
+          Next to lead developers towards good decisions.
         </p>
       </div>
     </div>
