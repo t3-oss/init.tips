@@ -64,7 +64,7 @@ export default function Home() {
           <a href="#why">...why?</a>
         </div>
       </div>
-      <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
+      <div className="flex flex-col items-center h-screen justify-center cursor-default relative bg-gray-400 text-gray-700">
         <h2 id="why" className="text-lg">
           Why Next.js and Typescript?
         </h2>
