@@ -1,4 +1,3 @@
-import PlausibleProvider from "next-plausible";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import VisibilitySensor from "react-visibility-sensor";
@@ -197,13 +196,11 @@ const SiteHead: React.FC = () => {
 
 export default function Home() {
   return (
-    <PlausibleProvider domain="init.tips">
-      <div>
-        <SiteHead />
-        <RecommendationPage />
-        <WhyPage />
-        <AboutPage />
-      </div>
-    </PlausibleProvider>
+    <div>
+      <SiteHead />
+      <RecommendationPage />
+      <WhyPage />
+      <AboutPage />
+    </div>
   );
 }

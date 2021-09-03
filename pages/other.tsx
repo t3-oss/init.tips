@@ -1,4 +1,3 @@
-import PlausibleProvider from "next-plausible";
 import Head from "next/head";
 
 const OtherPage = () => {
@@ -144,11 +143,9 @@ const SiteHead: React.FC = () => {
 
 export default function Home() {
   return (
-    <PlausibleProvider domain="init.tips">
-      <div>
-        <SiteHead />
-        <OtherPage />
-      </div>
-    </PlausibleProvider>
+    <div>
+      <SiteHead />
+      <OtherPage />
+    </div>
   );
 }
