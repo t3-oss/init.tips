@@ -67,7 +67,10 @@ const OtherPage = () => {
         </p>
 
         <h2 className="text-xl mt-4">
-          <a href="https://railway.app/" className="link-dark">
+          <a
+            href="https://railway.app?referralCode=Ms4Rg-"
+            className="link-dark"
+          >
             Railway
           </a>
         </h2>
