@@ -4,6 +4,8 @@ import VisibilitySensor from "react-visibility-sensor";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import { usePlausible } from "next-plausible";
+
 const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
 
 const useTemp = () => {
@@ -21,6 +23,8 @@ const useTemp = () => {
 
 const CodeBlock: React.FC = () => {
   const [copied, update] = useTemp();
+  const plausible = usePlausible();
+
   return (
     <>
       <code
@@ -28,6 +32,7 @@ const CodeBlock: React.FC = () => {
         onClick={() => {
           window.navigator.clipboard.writeText(CURRENT_RECOMMENDED_COMMAND);
           update();
+          plausible("clipboard-copy");
         }}
       >
         {CURRENT_RECOMMENDED_COMMAND}
