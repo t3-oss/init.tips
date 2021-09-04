@@ -67,7 +67,9 @@ const VisibilityWrapper: React.FC<{ hash: string }> = (props) => {
 const RecommendationPage = () => {
   return (
     <div className="flex flex-col items-center animate-fade-in-down h-screen justify-center relative cursor-default">
-      <div className="text-xl p-4">We Recommend Using</div>
+      <h1 className="text-2xl">Starting a new dev project?</h1>
+      <div className="py-4" />
+      <h2 className="text-xl font-light">We Recommend Using</h2>
       <CodeBlock />
       <div className="absolute bottom-0 w-full flex justify-center p-4">
         <VisibilityWrapper hash="">
