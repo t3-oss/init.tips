@@ -52,6 +52,26 @@ const OtherPage = () => {
           ORM, but man, trust me on this one.
         </p>
 
+        <h1 className="text-2xl mb-4 mt-8 font-semibold">Authentication</h1>
+
+        <h2 className="text-xl mt-4">
+          <a href="https://next-auth.js.org/" className="link-dark">
+            NextAuth.js
+          </a>
+        </h2>
+        <p>
+          Man this library makes auth easy. No ownership compromise, hooks up to
+          your DB directly. So good that I ported two projects to Next to use
+          it.
+        </p>
+        <p>
+          Note:{" "}
+          <span className="italic">
+            Does not support React Native directly. Yet.
+          </span>{" "}
+          😉
+        </p>
+
         <h1 className="text-2xl mb-4 mt-8 font-semibold">Deployments and CI</h1>
 
         <h2 className="text-xl mt-4">
