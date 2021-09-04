@@ -4,7 +4,7 @@ import PlausibleProvider from "next-plausible";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <PlausibleProvider domain="init.tips" trackOutboundLinks>
+    <PlausibleProvider domain="init.tips">
       <Component {...pageProps} />
     </PlausibleProvider>
   );
