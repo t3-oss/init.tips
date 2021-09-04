@@ -84,7 +84,7 @@ const WhyPage = () => {
       id="why"
       className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-300 text-gray-700"
     >
-      <div className="max-w-md md:max-w-2xl text-lg px-4 py-10">
+      <div className="max-w-md md:max-w-2xl text-lg px-4 pt-10 pb-20 lg:pb-10">
         <h2 className="text-xl font-bold mt-4">
           Why <a href="https://www.typescriptlang.org/">Typescript</a>?
         </h2>
