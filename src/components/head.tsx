@@ -1,8 +1,8 @@
 import Head from "next/head";
 
 const DEFAULT_DESCRIPTION =
-  "init.tips - our current recommendation for initializing a new web development project";
-const DEFAULT_TITLE = "init.tips";
+  "Getting started with a new project doesn't have to be hard. Take our recommendations to get started on the right foot. Open source. Currently recommending Next.js and Typescript";
+const DEFAULT_TITLE = "init.tips - start on the right stack";
 
 export const CustomSiteHead: React.FC<{
   title?: string;
