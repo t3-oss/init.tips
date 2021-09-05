@@ -1,10 +1,10 @@
-import Head from "next/head";
 import { useEffect, useState } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 import { usePlausible } from "next-plausible";
+import { CustomSiteHead } from "../components/head";
 
 const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
 
@@ -183,28 +183,10 @@ const AboutPage = () => {
   );
 };
 
-const SITE_DESCRIPTION =
-  "init.tips - our current recommendation for initializing a new web development project";
-const SITE_NAME = "init.tips";
-
-const SiteHead: React.FC = () => {
-  return (
-    <Head>
-      <title>{SITE_NAME}</title>
-      <meta property="og:title" content={SITE_NAME} />
-      <meta name="description" content={SITE_DESCRIPTION} />
-      <meta property="og:description" content={SITE_DESCRIPTION} />
-      <meta property="og:url" content="https://init.tips/" />
-      <meta property="og:type" content="website" />
-      <link rel="icon" href="/favicon.svg" />
-    </Head>
-  );
-};
-
 export default function Home() {
   return (
     <div>
-      <SiteHead />
+      <CustomSiteHead />
       <RecommendationPage />
       <WhyPage />
       <AboutPage />

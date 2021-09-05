@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { CustomSiteHead } from "../components/head";
 
 const OtherPage = () => {
   return (
@@ -143,28 +143,10 @@ const OtherPage = () => {
   );
 };
 
-const SITE_DESCRIPTION =
-  "init.tips - our current recommendation for initializing a new web development project";
-const SITE_NAME = "Other Recommendations - init.tips";
-
-const SiteHead: React.FC = () => {
-  return (
-    <Head>
-      <title>{SITE_NAME}</title>
-      <meta property="og:title" content={SITE_NAME} />
-      <meta name="description" content={SITE_DESCRIPTION} />
-      <meta property="og:description" content={SITE_DESCRIPTION} />
-      <meta property="og:url" content="https://init.tips/" />
-      <meta property="og:type" content="website" />
-      <link rel="icon" href="/favicon.svg" />
-    </Head>
-  );
-};
-
 export default function Home() {
   return (
     <div>
-      <SiteHead />
+      <CustomSiteHead title="Other Recommendations - init.tips" />
       <OtherPage />
     </div>
   );
