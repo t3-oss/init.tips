@@ -52,6 +52,22 @@ const OtherPage = () => {
           ORM, but man, trust me on this one.
         </p>
 
+        <h2 className="text-xl mt-4">
+          <a href="https://plausible.io/" className="link-dark">
+            Plausible
+          </a>
+        </h2>
+        <p>
+          Need analytics? Plausible is one of the quickest ways to get them.
+          Super minimal. It even has a{" "}
+          <a
+            href="https://plausible.io/docs/proxy/guides/nextjs"
+            className="link-dark"
+          >
+            simple plugin for Next.js.
+          </a>
+        </p>
+
         <h1 className="text-2xl mb-4 mt-8 font-semibold">Authentication</h1>
 
         <h2 className="text-xl mt-4">
