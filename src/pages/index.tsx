@@ -39,7 +39,7 @@ const CodeBlock: React.FC = () => {
         <div className="absolute right-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center h-full">
           <ClipboardIcon />
         </div>
-        <code className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded relative flex">
+        <code className="bg-gray-700 transition group-hover:bg-gray-500 text-gray-200 px-4 py-2 rounded relative flex">
           {CURRENT_RECOMMENDED_COMMAND}
         </code>
       </div>
