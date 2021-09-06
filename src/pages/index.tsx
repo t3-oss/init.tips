@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 import { usePlausible } from "next-plausible";
 import { CustomSiteHead } from "../components/head";
+import { ClipboardIcon } from "../components/clipboard";
 
 const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
 
@@ -27,16 +28,21 @@ const CodeBlock: React.FC = () => {
 
   return (
     <>
-      <code
-        className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded cursor-pointer"
+      <div
+        className="relative group ml-8 pr-8 cursor-pointer"
         onClick={() => {
           window.navigator.clipboard.writeText(CURRENT_RECOMMENDED_COMMAND);
           update();
           plausible("clipboard-copy");
         }}
       >
-        {CURRENT_RECOMMENDED_COMMAND}
-      </code>
+        <div className="absolute right-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center h-full">
+          <ClipboardIcon />
+        </div>
+        <code className="bg-gray-700 transition hover:bg-gray-500 text-gray-200 px-4 py-2 rounded relative flex">
+          {CURRENT_RECOMMENDED_COMMAND}
+        </code>
+      </div>
       <div
         className={`mt-2 opacity-1 ${
           !copied && "opacity-0 duration-500 transition-opacity"
@@ -70,6 +76,7 @@ const RecommendationPage = () => {
       <h1 className="text-2xl">Starting a new dev project?</h1>
       <div className="py-4" />
       <h2 className="text-xl font-light">We Recommend Using</h2>
+      <div className="pt-2" />
       <CodeBlock />
       <div className="absolute bottom-0 w-full flex justify-center p-4">
         <VisibilityWrapper hash="">
