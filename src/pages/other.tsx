@@ -19,7 +19,7 @@ const OtherPage = () => {
 
         <h2 className="text-xl mt-4">
           <a href="http://tailwindcss.com/" className="link-dark">
-            Tailwind CSS
+            Tailwind CSS - for your styles
           </a>
         </h2>
         <p>I hated the idea of Tailwind. Then I tried it.</p>
@@ -33,7 +33,7 @@ const OtherPage = () => {
 
         <h2 className="text-xl mt-4">
           <a href="https://react-query.tanstack.com/" className="link-dark">
-            React Query
+            React Query - for your client
           </a>
         </h2>
         <p>
@@ -44,7 +44,7 @@ const OtherPage = () => {
 
         <h2 className="text-xl mt-4">
           <a href="https://www.prisma.io/" className="link-dark">
-            Prisma.io
+            Prisma.io - for your DB
           </a>
         </h2>
         <p>
@@ -53,8 +53,20 @@ const OtherPage = () => {
         </p>
 
         <h2 className="text-xl mt-4">
+          <a href="https://www.trpc.io/" className="link-dark">
+            tRPC - for defining and consuming APIs
+          </a>
+        </h2>
+        <p>
+          tRPC delivers on GraphQL's promise of seamless client development
+          against a typesafe server without all of the boilerplate. It's a
+          clever abuse of Typescript that provides an incredible dev experience.
+        </p>
+
+        <h1 className="text-2xl mb-4 mt-8 font-semibold">Analytics</h1>
+        <h2 className="text-xl mt-4">
           <a href="https://plausible.io/" className="link-dark">
-            Plausible
+            Plausible - for user data
           </a>
         </h2>
         <p>
@@ -72,7 +84,7 @@ const OtherPage = () => {
 
         <h2 className="text-xl mt-4">
           <a href="https://next-auth.js.org/" className="link-dark">
-            NextAuth.js
+            NextAuth.js - for authentication
           </a>
         </h2>
         <p>
@@ -92,7 +104,7 @@ const OtherPage = () => {
 
         <h2 className="text-xl mt-4">
           <a href="https://vercel.com/" className="link-dark">
-            Vercel
+            Vercel - for hosting your website
           </a>
         </h2>
         <p>
@@ -106,7 +118,7 @@ const OtherPage = () => {
             href="https://railway.app?referralCode=Ms4Rg-"
             className="link-dark"
           >
-            Railway
+            Railway - for hosting your infra
           </a>
         </h2>
         <p>
@@ -128,7 +140,7 @@ const OtherPage = () => {
 
         <h2 className="text-xl mt-4">
           <a href="https://github.com/pmndrs/zustand" className="link-dark">
-            Zustand
+            Zustand - for never using Redux again
           </a>
         </h2>
         <p>
@@ -142,7 +154,7 @@ const OtherPage = () => {
 
         <h2 className="text-xl mt-4">
           <a href="https://jotai.pmnd.rs/" className="link-dark">
-            Jotai
+            Jotai - for never using Context again
           </a>
         </h2>
         <p>
