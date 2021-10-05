@@ -135,7 +135,7 @@ const WhyPage = () => {
         <p>
           We believe in keeping things as simple as possible. These
           recommendations can get you pretty far, but we recognize there are
-          problems these tools don't sovle well by themselves.
+          problems these tools don't solve well by themselves.
         </p>
         <p>
           <Link href="/other">
