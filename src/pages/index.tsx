@@ -34,8 +34,7 @@ const CodeBlock: React.FC = () => {
           window.navigator.clipboard.writeText(CURRENT_RECOMMENDED_COMMAND);
           update();
           plausible("clipboard-copy");
-        }}
-      >
+        }}>
         <div className="absolute right-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center h-full">
           <ClipboardIcon />
         </div>
@@ -46,25 +45,23 @@ const CodeBlock: React.FC = () => {
       <div
         className={`mt-2 opacity-1 ${
           !copied && "opacity-0 duration-500 transition-opacity"
-        }`}
-      >
+        }`}>
         Copied Successfully!
       </div>
     </>
   );
 };
 
-const VisibilityWrapper: React.FC<{ hash: string }> = (props) => {
+const VisibilityWrapper: React.FC<{ hash: string }> = props => {
   const router = useRouter();
   return (
     <VisibilitySensor
-      onChange={(isVisible) => {
+      onChange={isVisible => {
         if (isVisible && window.location.hash !== props.hash) {
           router.replace(props.hash);
         }
       }}
-      partialVisibility
-    >
+      partialVisibility>
       {props.children}
     </VisibilitySensor>
   );
@@ -91,8 +88,7 @@ const WhyPage = () => {
   return (
     <div
       id="why"
-      className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-300 text-gray-700"
-    >
+      className="flex flex-col items-center min-h-screen justify-center cursor-default relative bg-gray-300 text-gray-700">
       <div className="max-w-md md:max-w-2xl text-lg px-4 pt-10 pb-20 lg:pb-10">
         <h2 className="text-xl font-bold mt-4">
           Why <a href="https://www.typescriptlang.org/">Typescript</a>?
@@ -137,9 +133,10 @@ const WhyPage = () => {
           recommendations can get you pretty far, but we recognize there are
           problems these tools don't solve well by themselves.
         </p>
-        <p>
+        <br />
+        <p className="underline text-xl text-center">
           <Link href="/other">
-            <a className="link-light">
+            <a className="link-light font-bold">
               Here are some recommendations for when things get more complex
             </a>
           </Link>
@@ -156,8 +153,7 @@ const AboutPage = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center min-h-screen justify-center cursor-default relative"
-    >
+      className="flex flex-col items-center min-h-screen justify-center cursor-default relative">
       <div className="max-w-md md:max-w-2xl text-lg p-4">
         <h2 className="text-xl font-bold mt-4">Credits</h2>
         <p>
