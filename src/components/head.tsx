@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const DEFAULT_DESCRIPTION =
-  "Getting started with a new project doesn't have to be hard. Take our recommendations to get started on the right foot. Open source. Currently recommending Next.js and Typescript";
+  "Getting started with a new project doesn't have to be hard. Take our recommendations to begin on the right foot. Open source. Currently recommending Next.js and Typescript";
 const DEFAULT_TITLE = "init.tips - start on the right stack";
 
 export const CustomSiteHead: React.FC<{

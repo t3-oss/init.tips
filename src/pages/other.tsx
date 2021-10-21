@@ -100,7 +100,9 @@ const OtherPage = () => {
           😉
         </p>
 
-        <h1 className="text-2xl mb-4 mt-8 font-semibold">Deployments and CI</h1>
+        <h1 className="text-2xl mb-4 mt-8 font-semibold">
+          Deployments, Infrasctructure, Databases and CI
+        </h1>
 
         <h2 className="text-xl mt-4">
           <a href="https://vercel.com/" className="link-dark">
@@ -114,6 +116,17 @@ const OtherPage = () => {
         </p>
 
         <h2 className="text-xl mt-4">
+          <a href="https://planetscale.com/" className="link-dark">
+            PlanetScale - for databases without the worry
+          </a>
+        </h2>
+        <p>
+          PlanetScale is the best "serverless database platform" I've used by
+          far. Insane scale, great developer experience, fantastic pricing. If
+          you're using sql (and hopefully Prisma), this is hard to beat.
+        </p>
+
+        <h2 className="text-xl mt-4">
           <a
             href="https://railway.app?referralCode=Ms4Rg-"
             className="link-dark"
@@ -122,10 +135,10 @@ const OtherPage = () => {
           </a>
         </h2>
         <p>
-          "Modern Heroku". Easiest way to get a real server up and running.
-          Point it at a GitHub repo and go.
+          "Modern Heroku". Easiest way to get a real server up and running. If
+          Vercel and PlanetScale aren't enough, Railway probably is. Point it at
+          a GitHub repo and go.
         </p>
-        <p>(Likely the easiest place to host a database right now)</p>
 
         <h1 className="text-2xl mb-2 mt-8 font-semibold">State Management</h1>
         <p>
