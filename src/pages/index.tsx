@@ -95,19 +95,19 @@ const WhyPage = () => {
     >
       <div className="max-w-md md:max-w-2xl text-lg px-4 pt-10 pb-20 lg:pb-10">
         <h2 className="text-xl font-bold mt-4">
-          Why <a href="https://www.typescriptlang.org/">Typescript</a>?
+          Why <a href="https://www.typescriptlang.org/">TypeScript</a>?
         </h2>
         <p>Javascript is hard. Why add more rules?</p>
         <p>
           We firmly believe the experience{" "}
           <a href="https://www.typescriptlang.org/" className="link-light">
-            Typescript
+            TypeScript
           </a>{" "}
           provides will{" "}
           <span className="italic">help you be a better developer,</span>{" "}
           regardless of where you are in your career as an engineer. Whether
           you're new to web development or a seasoned pro, the "strictness" of
-          Typescript will provide a less frustrating, more consistent experience
+          TypeScript will provide a less frustrating, more consistent experience
           than vanilla JS
         </p>
 
