@@ -9,7 +9,7 @@ const OtherPage = () => {
       <div className="max-w-md md:max-w-2xl text-lg p-4 my-12">
         <h2 className="text-2xl font-bold mt-4 mb-2">Other Recommendations</h2>
         <p>
-          We recognize that Next.js and Typescript don't solve every problem.
+          We recognize that Next.js and TypeScript don't solve every problem.
           While we encourage you to use the primitives they provide as often as
           you can, there are other tools that will help simplify and improve
           your developer experience.
@@ -48,7 +48,7 @@ const OtherPage = () => {
           </a>
         </h2>
         <p>
-          Prisma is to SQL what Typescript is to JS. Never thought I'd love an
+          Prisma is to SQL what TypeScript is to JS. Never thought I'd love an
           ORM, but man, trust me on this one.
         </p>
 
@@ -60,7 +60,7 @@ const OtherPage = () => {
         <p>
           tRPC delivers on GraphQL's promise of seamless client development
           against a typesafe server without all of the boilerplate. It's a
-          clever abuse of Typescript that provides an incredible dev experience.
+          clever abuse of TypeScript that provides an incredible dev experience.
         </p>
 
         <h1 className="text-2xl mb-4 mt-8 font-semibold">Analytics</h1>
