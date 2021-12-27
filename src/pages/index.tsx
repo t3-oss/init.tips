@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
+import Head from "next/head";
 import VisibilitySensor from "react-visibility-sensor";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
 import { usePlausible } from "next-plausible";
-import { CustomSiteHead } from "../components/head";
 import { ClipboardIcon } from "../components/clipboard";
 
 const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
@@ -28,7 +27,10 @@ const CodeBlock: React.FC = () => {
 
   return (
     <>
-      <div
+      <Head key="Home">
+        <title>init.tips - start on the right stack</title>
+      </Head>
+      <button
         className="relative group ml-8 pr-8 cursor-pointer"
         onClick={() => {
           window.navigator.clipboard.writeText(CURRENT_RECOMMENDED_COMMAND);
@@ -36,13 +38,13 @@ const CodeBlock: React.FC = () => {
           plausible("clipboard-copy");
         }}
       >
-        <div className="absolute right-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center h-full">
+        <div className="absolute right-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity flex items-center h-full">
           <ClipboardIcon />
         </div>
         <code className="bg-gray-700 transition group-hover:bg-gray-500 text-gray-200 px-4 py-2 rounded relative flex">
           {CURRENT_RECOMMENDED_COMMAND}
         </code>
-      </div>
+      </button>
       <div
         className={`mt-2 opacity-1 ${
           !copied && "opacity-0 duration-500 transition-opacity"
@@ -95,12 +97,26 @@ const WhyPage = () => {
     >
       <div className="max-w-md md:max-w-2xl text-lg px-4 pt-10 pb-20 lg:pb-10">
         <h2 className="text-xl font-bold mt-4">
-          Why <a href="https://www.typescriptlang.org/">TypeScript</a>?
+          Why{" "}
+          <a
+            className="hover:underline hover:decoration-line-light"
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            TypeScript
+          </a>
+          ?
         </h2>
         <p>Javascript is hard. Why add more rules?</p>
         <p>
           We firmly believe the experience{" "}
-          <a href="https://www.typescriptlang.org/" className="link-light">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.typescriptlang.org/"
+            className="link-light"
+          >
             TypeScript
           </a>{" "}
           provides will{" "}
@@ -114,14 +130,28 @@ const WhyPage = () => {
         <div className="p-4" />
 
         <h2 className="text-xl font-bold">
-          Why <a href="https://nextjs.org/">Next.js</a>?
+          Why{" "}
+          <a
+            className="hover:underline hover:decoration-line-light"
+            href="https://nextjs.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Next.js
+          </a>
+          ?
         </h2>
         <p>
           We love React. It has made UI development accessible in ways we never
           imagined before. It also can lead developers down some rough paths.
         </p>
         <p>
-          <a href="https://nextjs.org/" className="link-light">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://nextjs.org/"
+            className="link-light"
+          >
             Next.js
           </a>{" "}
           offers a lightly opinionated, heavily optimized approach to creating a
@@ -137,11 +167,9 @@ const WhyPage = () => {
           recommendations can get you pretty far, but we recognize there are
           problems these tools don't solve well by themselves.
         </p>
-        <p>
+        <p className="link-light">
           <Link href="/other">
-            <a className="link-light">
-              Here are some recommendations for when things get more complex
-            </a>
+            Here are some recommendations for when things get more complex
           </Link>
         </p>
       </div>
@@ -193,7 +221,6 @@ const AboutPage = () => {
 export default function Home() {
   return (
     <div>
-      <CustomSiteHead />
       <RecommendationPage />
       <WhyPage />
       <AboutPage />
