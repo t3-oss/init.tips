@@ -8,19 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "11.1.2",
-    "next-plausible": "^2.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "^12.0.7",
+    "next-plausible": "^3.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "@types/react": "17.0.19",
-    "autoprefixer": "^10.3.3",
+    "autoprefixer": "^10.4.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.9",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7",
     "typescript": "4.4.2"
   }
 }

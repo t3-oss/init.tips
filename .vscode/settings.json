@@ -15,5 +15,9 @@
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
-  }
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.validate": true,
+
+  "css.validate": false
 }

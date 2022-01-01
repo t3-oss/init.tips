@@ -1,7 +1,5 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       keyframes: {
@@ -25,8 +23,8 @@ module.exports = {
         },
       },
       animation: {
-        "fade-in-down": "fade-in-down 0.5s ease-out",
-        "fade-in": "fade-in 0.2s ease-out",
+        "fade-in-down": "fade-in-down 0.5s ease-in-out",
+        "fade-in": "fade-in 0.5s ease-in-out",
       },
     },
   },
