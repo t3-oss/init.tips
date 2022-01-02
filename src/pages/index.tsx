@@ -190,12 +190,16 @@ const AboutPage = () => {
         <h2 className="text-xl font-bold mt-4">Credits</h2>
         <p>
           Built by{" "}
-          <a href="https://t3.gg" className="link-dark">
+          <a href="https://twitter.com/t3dotgg" className="link-dark">
             Theo
           </a>{" "}
-          and{" "}
+          {", "}
           <a href="https://mark.florkow.ski" className="link-dark">
             Mark
+          </a>
+          {", and "}
+          <a href="https://github.com/JasonDocton" className="link-dark">
+            Jason
           </a>
         </p>
         <p>
