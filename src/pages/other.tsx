@@ -141,7 +141,7 @@ const OtherPage = () => {
           </p>
 
           <h1 className="text-2xl mb-4 mt-8 font-semibold">
-            Deployments, Infrasctructure, Databases and CI
+            Deployments, Infrastructure, Databases and CI
           </h1>
 
           <h2 className="text-xl mt-4">
