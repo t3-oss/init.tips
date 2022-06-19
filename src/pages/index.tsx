@@ -192,7 +192,7 @@ const AboutPage = () => {
           Built by{" "}
           <a href="https://twitter.com/t3dotgg" className="link-dark">
             Theo
-          </a>{" "}
+          </a>
           {", "}
           <a href="https://mark.florkow.ski" className="link-dark">
             Mark
