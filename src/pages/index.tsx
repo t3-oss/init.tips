@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { usePlausible } from "next-plausible";
 import { ClipboardIcon } from "../components/clipboard";
 
-const CURRENT_RECOMMENDED_COMMAND = "npx create-next-app --ts";
+const CURRENT_RECOMMENDED_COMMAND = "npx create-t3-app";
 
 const useTemp = () => {
   const [copied, setCopied] = useState(false);
@@ -161,11 +161,15 @@ const WhyPage = () => {
 
         <div className="p-4" />
 
-        <h2 className="text-xl font-bold">Why nothing else?</h2>
+        <h2 className="text-xl font-bold">Why tRPC/Prisma/Tailwind/etc?</h2>
         <p>
-          We believe in keeping things as simple as possible. These
-          recommendations can get you pretty far, but we recognize there are
-          problems these tools don't solve well by themselves.
+          While we believe in keeping things as simple as possible, we find
+          these pieces being used in every "app" like project we build.{" "}
+          <a className="link-light" href="https://create.t3.gg">
+            create-t3-app
+          </a>{" "}
+          does a great job of letting you adopt{" "}
+          <Link href="/other">the pieces you need</Link>
         </p>
         <p className="link-light">
           <Link href="/other">
