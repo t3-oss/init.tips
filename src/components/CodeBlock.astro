@@ -5,9 +5,13 @@ const CURRENT_RECOMMENDED_COMMAND = "npx create-t3-app";
 const handleClick = () => {
   navigator.clipboard.writeText(CURRENT_RECOMMENDED_COMMAND);
 
-  document
-    .getElementById("copy-success")
-    .classList.add("opacity-0", "duration-500", "transition-opacity");
+  const elem = document
+    .getElementById("copy-success");
+
+    console.log("elem", elem);
+
+  
+    elem.classList.add("opacity-0", "duration-500", "transition-opacity");
 };
 ---
 
