@@ -1,0 +1,33 @@
+---
+import ClipboardIcon from "./Clipboard.astro";
+const CURRENT_RECOMMENDED_COMMAND = "npx create-t3-app";
+---
+
+<button id="copy-btn" class="relative group ml-8 pr-8 cursor-pointer">
+  <div
+    class="absolute right-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity flex items-center h-full"
+  >
+    <ClipboardIcon />
+  </div>
+  <code
+    class="bg-gray-700 transition group-hover:bg-gray-500 text-gray-200 px-4 py-2 rounded relative flex"
+  >
+    {CURRENT_RECOMMENDED_COMMAND}
+  </code>
+</button>
+<div id="copy-success" class="mt-2 opacity-0">Copied Successfully!</div>
+
+<script defer>
+  const CURRENT_RECOMMENDED_COMMAND = "npx create-t3-app";
+  const copyBtn = document.querySelector("#copy-btn");
+  const copySuccess = document.querySelector("#copy-success");
+
+  copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(CURRENT_RECOMMENDED_COMMAND);
+    copySuccess.classList.add(
+      "opacity-1",
+      "duration-500",
+      "transition-opacity"
+    );
+  });
+</script>
